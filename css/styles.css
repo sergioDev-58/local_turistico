@@ -16,7 +16,7 @@ body {
     background-color: #1E1E1E;
 }
 
-#page {
+#page  {
   box-sizing: border-box;
   margin: 80px auto 80px;
   width: 1440px;
@@ -29,17 +29,18 @@ body {
 
 #page2 {
     box-sizing: border-box;
-    margin: 0px;
+    /*margin: 0px auto;*/
     width: 1280px;
     /*height: auto;*/
-    padding: 80px;
+    padding: 80px 80px;
     background-color: #F5F4F0;
 }
 
 #imagem {
-    width: 100%;
+    /*width: 100%;*/
     /*height: 660px;*/
     border-radius: 28px;
+    gap: 64px;
 }
 
 #imagem2 {
@@ -56,10 +57,10 @@ body {
 }
 
 #imagem4 {
-    margin: 80px 80px;
+    margin: 80px auto;
     width: 1120px;
-    height: 350px;
     border-radius: 28px;
+    /*height: 350px;*/
 
 }
 
@@ -78,10 +79,11 @@ body {
     border-radius: 16px;
 }
 
-#parque {
-    margin: auto ;
-    width: 100%;
-    /*height: 350px;*/
+#parque  {
+
+    margin: 80px auto 80px ;
+    /*width: 1120px;*/
+    /*height: auto;*/
     border-radius: 16px;
 
 }
@@ -98,13 +100,10 @@ h5 {
 .divider {
     border: 0;
     height: 40px;
-
 }
 
 .custom-line {
-    border: 0px;
-    height: 64px;
-    margin: 20px 0;
+    line-height: 64px;
 }
 
 .custom-line2 {
@@ -116,3 +115,4 @@ h5 {
 .text-align {
     text-align: center;
 }
+
