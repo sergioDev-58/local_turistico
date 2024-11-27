@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -7,42 +7,44 @@
 
 /* Variáveis Globais */
 :root {
-    --font-primary: "Open Sans", serif;
-    --color-bg-body: #1E1E1E;
-    --color-bg-card: #29292E;
-    --color-bg-light: #F5F4F0;
+    --font-family: "Open Sans", serif;
+    --line-height: 1.6;
+    --bg-body: #1E1E1E;
+    --bg-card: #29292E;
+    --bg-light: #F5F4F0;
     --color-highlight: red;
     --color-text-light: #F5F4F0;
     --radius-card: 40px;
     --radius-image: 28px;
     --radius-section: 16px;
-    --padding-card: 80px;
-    --max-width-page: 1440px;
-    line-height: 1.5;
-    font-family: var(--font-primary);
+    --padding-large: 80px;
+    --padding-medium: 64px;
+    --spacing-large: 80px;
+    --spacing-small: 20px;
 }
 
 /* Corpo */
 body {
-    background-color: var(--color-bg-body);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    background-color: var(--bg-body);
     background-size: cover;
-    font-family: var(--font-primary);
     color: var(--color-text-light);
 }
 
-/* Página Principal */
+/* Estrutura Principal */
 #page {
-    margin: 80px auto;
-    max-width: var(--max-width-page);
-    padding: var(--padding-card);
+    margin: var(--spacing-large) auto;
+    width: 1440px;
+    padding: var(--padding-large);
     border-radius: var(--radius-card);
-    background-color: var(--color-bg-card);
+    background-color: var(--bg-card);
 }
 
 #page2 {
     width: 1280px;
-    padding: 80px;
-    background-color: var(--color-bg-light);
+    padding: 96px var(--padding-medium);
+    background-color: var(--bg-light);
     border-radius: var(--radius-card);
 }
 
@@ -54,54 +56,55 @@ img {
     border-radius: var(--radius-image);
 }
 
-#imagem2,
-#imagem3,
-#imagem4 {
+#imagem2, #imagem3, #imagem4 {
     width: 1120px;
+    height: 350px;
     border-radius: var(--radius-image);
 }
 
-/* Seções */
-section {
-    margin: 80px auto;
-    width: 100%;
-    border-radius: var(--radius-section);
-    padding: 20px;
-    background-color: var(--color-bg-light);
+#imagem4 {
+    margin: var(--spacing-large) auto;
 }
 
-/* Cabeçalhos */
+/* Seções */
+#templo, #parque {
+    margin: var(--spacing-large) auto;
+    border-radius: var(--radius-section);
+}
+
+/* Tipografia */
 h4 {
     color: var(--color-text-light);
     padding: 15px;
-    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 h5 {
     color: var(--color-highlight);
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+p {
+    line-height: var(--line-height);
 }
 
 /* Divisores */
-.divider {
+.divider, .custom-line, .custom-line2 {
     height: 40px;
-    background-color: var(--color-bg-light);
-    margin: 20px 0;
+    border: 0;
 }
 
 .custom-line {
-    height: 64px;
-    background-color: var(--color-bg-card);
-    margin: 20px 0;
+    background-color: var(--bg-light);
+    margin: var(--spacing-small) 0;
 }
 
 .custom-line2 {
-    height: 44px;
-    background-color: var(--color-bg-light);
-    margin: 20px 0;
+    margin: var(--spacing-small) 0;
 }
 
 /* Utilitários */
-.text-align {
+.text-align, #texto {
     text-align: center;
 }
